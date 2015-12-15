@@ -13,13 +13,13 @@ keystone.init({
 
 	'name': 'universal-keystone',
 	'brand': 'universal-keystone',
-	
+
 	'less': 'public',
 	'static': 'public',
 	'favicon': 'public/favicon.ico',
 	'views': 'templates/views',
 	'view engine': 'jade',
-	
+
 	'auto update': true,
 	'session': true,
 	'auth': true,
