@@ -18,10 +18,9 @@
  * http://expressjs.com/api.html#app.VERB
  */
 
-import keystone from 'keystone';
-import middleware from './middleware';
-
-const importRoutes = keystone.importer(__dirname);
+var keystone = require('keystone');
+var middleware = require('./middleware');
+var importRoutes = keystone.importer(__dirname);
 
 // Common Middleware
 keystone.pre('routes', middleware.initLocals);
@@ -33,7 +32,7 @@ var routes = {
 };
 
 // Setup Route Bindings
-export default (app) => {
+exports = module.exports = function(app) {
 
 	// Views
 	app.get('/', routes.views.index);
