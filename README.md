@@ -1,4 +1,4 @@
-# universal-keystone-boilerplate
+# Universal Keystone Boilerplate
 A Keystone.JS boilerplate for Universal JavaScript projects using React.
 
 ## Status
