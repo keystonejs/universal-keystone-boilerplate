@@ -40,7 +40,7 @@
     "start": "babel-node keystone.js",
     "pretest": "npm run -s lint",
     "test": "babel-node test/index.js",
-    "watch": "watch 'npm run -s test' models public routes templates updates test",
+    "watch": "watch 'clear && npm run -s test' models public routes templates updates test",
     "latest": "updtr"
   },
   "main": "keystone.js"
