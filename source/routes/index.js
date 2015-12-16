@@ -32,7 +32,7 @@ var routes = {
 };
 
 // Setup Route Bindings
-exports = module.exports = function(app) {
+exports = module.exports = function (app) {
 
 	// Views
 	app.get('/', routes.views.index);
