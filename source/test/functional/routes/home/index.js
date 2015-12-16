@@ -7,13 +7,13 @@ const route = '/';
 
 test(`GET ${ route }`, assert => {
   assert.test(route, assert => {
-    const msg = 'should return 200 OK';
+    const msg = 'should not return an error';
 
     request(app)
       .get(route)
       .expect(200)
       .end(err => {
-        assert.error(err, 'should not return an error');
+        assert.error(err, msg);
         assert.end();
       });
   });
