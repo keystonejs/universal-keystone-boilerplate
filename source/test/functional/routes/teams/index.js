@@ -1,12 +1,9 @@
 import test from 'tape';
 import request from 'supertest';
-import keystone from 'keystone.js';
+import keystone from 'test/helpers/keystone';
 
-const port = process.env.TEST_PORT || 5150;
 const app = keystone.app;
 const route = '/teams';
-
-keystone.set('port', port);
 
 test(`GET ${ route }`, assert => {
   assert.test(route, assert => {

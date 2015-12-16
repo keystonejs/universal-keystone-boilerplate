@@ -1,5 +1,5 @@
 import test from 'tape';
-import keystone from 'keystone.js';
+import keystone from 'test/helpers/keystone';
 
 import './home';
 import './teams';
