@@ -40,12 +40,12 @@
     "lint": "eslint .",
     "start:db": "mongod --dbpath data/db",
     "start": "NODE_PATH=source babel-node source/keystone.js",
-    "pretest": "npm run -s lint",
     "test": "NODE_PATH=source babel-node source/test/index.js",
-    "pretest:routes": "npm run -s lint",
     "test:routes": "NODE_PATH=source babel-node source/test/functional/routes/index.js",
-    "watch": "watch 'clear && npm run -s test' source",
-    "watch:routes": "watch 'clear && npm run -s test:routes' source",
+    "watch": "watch 'clear && npm run -s lint && npm run -s test' source",
+    "watch:routes": "watch 'clear && npm run -s lint && npm run -s test:routes' source",
+    "precheck": "npm run -s lint",
+    "check": "npm run -s test && npm run -s test:routes",
     "latest": "updtr"
   },
   "main": "keystone.js"
