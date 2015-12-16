@@ -9,6 +9,7 @@
     "dotenv": "1.2.0",
     "express": "4.13.3",
     "keystone": "ericelliott/keystone",
+    "react": "0.14.3",
     "underscore": "1.8.3"
   },
   "devDependencies": {
@@ -37,10 +38,10 @@
   "scripts": {
     "lint": "eslint .",
     "start:db": "mongod --dbpath data/db",
-    "start": "babel-node keystone.js",
+    "start": "NODE_PATH=source babel-node source/keystone.js",
     "pretest": "npm run -s lint",
-    "test": "babel-node test/index.js",
-    "watch": "watch 'clear && npm run -s test' models public routes templates updates test",
+    "test": "NODE_PATH=source babel-node source/test/index.js",
+    "watch": "watch 'clear && npm run -s test' source",
     "latest": "updtr"
   },
   "main": "keystone.js"
