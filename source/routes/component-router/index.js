@@ -16,7 +16,7 @@ const componentRouter = (req, res) => {
     }
 
     if (renderProps) {
-      return res.render('teams', {
+      return res.render('default', {
         content: renderToString(<RoutingContext { ...renderProps } />)
       });
     }

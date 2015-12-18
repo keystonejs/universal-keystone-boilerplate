@@ -1,7 +1,8 @@
-import test from 'tape';
 import request from 'supertest';
+import $ from 'cheerio';
+
+import test from 'test/helpers/jsx-tape';
 import keystone from 'test/helpers/keystone';
-import cheerio from 'cheerio';
 
 const app = keystone.app;
 const route = '/teams';
@@ -28,9 +29,8 @@ test(`GET ${ route }`, assert => {
       .expect(200)
       .end((err, response) => {
         assert.error(err, noError);
-        const expected = 'foo';
-        const $ = cheerio.load(response.text);
-        const actual = $('#content').html();
+        const expected = 3;
+        const actual = $($('.teams', response.text).html()).length;
 
         assert.equal(actual, expected, msg);
         assert.end();
