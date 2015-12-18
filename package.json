@@ -7,7 +7,7 @@
     "babel-core": "6.3.17",
     "babel-plugin-object-assign": "1.2.1",
     "dotenv": "1.2.0",
-    "elemental": "0.5.8",
+    "elemental": "0.5.9",
     "express": "4.13.3",
     "keystone": "ericelliott/keystone",
     "react": "0.14.3",
