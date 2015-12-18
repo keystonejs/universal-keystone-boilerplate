@@ -33,7 +33,7 @@
     "tape": "4.2.2",
     "tape-jsx-equals": "1.0.0",
     "updtr": "0.1.6",
-    "watch": "0.16.0",
+    "watch": "0.17.1",
     "webpack": "1.12.9",
     "webpack-dev-middleware": "1.4.0",
     "webpack-hot-middleware": "2.6.0"
