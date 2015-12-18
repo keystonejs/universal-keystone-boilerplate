@@ -4,7 +4,6 @@ import dom from 'cheerio';
 
 import reactDom from 'react-dom/server';
 import createTeams from 'components/teams';
-import createTeam from 'components/team';
 
 const render = reactDom.renderToStaticMarkup;
 
@@ -23,7 +22,18 @@ test('Teams component', nest => {
     const msg = 'should render children';
 
     const props = {
-      teamList: ['A Team', `Charlie's Angels`, 'Team CoCo'],
+      teamList: [
+        {
+          name: 'A Team',
+          id: '1'
+        }, {
+          name: `Charlie's Angels`,
+          id: 2
+        }, {
+          name: 'Team CoCo',
+          id: 3
+        }
+    ],
       teamClass: 'team',
       teamListClass: 'team-list'
     };
