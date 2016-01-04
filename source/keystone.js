@@ -10,6 +10,7 @@ try {
 
 // Require keystone
 var keystone = require('keystone');
+var componentRoutes = require('routes/component-routes');
 
 // Initialise Keystone with your project's configuration.
 // See http://keystonejs.com/guide/config for available options
@@ -25,6 +26,7 @@ keystone.init({
 	'favicon': 'public/favicon.ico',
 	'views': 'templates/views',
 	'view engine': 'jade',
+	'component routes': componentRoutes,
 
 	'auto update': true,
 	'session': true,
