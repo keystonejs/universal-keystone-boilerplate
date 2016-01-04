@@ -9,11 +9,11 @@
     "dotenv": "1.2.0",
     "elemental": "0.5.11",
     "express": "4.13.3",
-    "history": "1.13.1",
+    "history": "1.17.0",
     "keystone": "ericelliott/keystone",
     "react": "0.14.5",
     "react-dom": "0.14.5",
-    "react-router": "1.0.2",
+    "react-router": "1.0.3",
     "underscore": "1.8.3"
   },
   "devDependencies": {
