@@ -1,6 +1,6 @@
 // Simulate config options from your production environment by
 // customising the .env file in your project's root folder.
-var dotenv = require('dotenv');
+import dotenv from 'dotenv';
 
 try {
 	dotenv.load();
@@ -10,7 +10,7 @@ try {
 
 // Require keystone
 var keystone = require('keystone');
-var componentRoutes = require('routes/component-routes');
+import componentRoutes from 'routes/component-routes';
 
 // Initialise Keystone with your project's configuration.
 // See http://keystonejs.com/guide/config for available options
