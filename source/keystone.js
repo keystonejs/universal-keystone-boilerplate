@@ -26,7 +26,7 @@ keystone.init({
 	'favicon': 'public/favicon.ico',
 	'views': 'templates/views',
 	'view engine': 'jade',
-	'component routes': componentRoutes,
+	'react routes': componentRoutes,
 
 	'auto update': true,
 	'session': true,
