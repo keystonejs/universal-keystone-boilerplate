@@ -8,7 +8,7 @@
     "babel-plugin-object-assign": "1.2.1",
     "dotenv": "2.0.0",
     "elemental": "0.5.11",
-    "express": "4.13.3",
+    "express": "4.13.4",
     "history": "1.17.0",
     "keystone": "ericelliott/keystone",
     "react-dom": "0.14.6",
