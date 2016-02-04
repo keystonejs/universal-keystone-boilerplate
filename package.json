@@ -9,7 +9,7 @@
     "dotenv": "2.0.0",
     "elemental": "0.5.11",
     "express": "4.13.4",
-    "history": "1.17.0",
+    "history": "2.0.0",
     "keystone": "ericelliott/keystone",
     "react": "0.14.6",
     "react-dom": "0.14.7",
