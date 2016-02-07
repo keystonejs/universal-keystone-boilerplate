@@ -34,7 +34,7 @@
     "tape-jsx-equals": "1.0.0",
     "updtr": "0.1.7",
     "watch": "0.17.1",
-    "webpack": "1.12.12",
+    "webpack": "1.12.13",
     "webpack-dev-middleware": "1.5.1",
     "webpack-hot-middleware": "2.6.4"
   },
