@@ -21,9 +21,9 @@ keystone.init({
 	'name': 'universal-keystone',
 	'brand': 'universal-keystone',
 
-	'less': 'public',
-	'static': 'public',
-	'favicon': 'public/favicon.ico',
+	'less': '../public',
+	'static': '../public',
+	'favicon': '../public/favicon.ico',
 	'views': 'templates/views',
 	'view engine': 'jade',
 	'react routes': componentRoutes,
